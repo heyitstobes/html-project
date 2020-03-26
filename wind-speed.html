@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Toby's HTML Project</title>
+  <title>Bootstrap Components</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -39,34 +39,38 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
-    <section class="row">
-      <div class="col-md-8">
-        <article class="description-content">
-          <h1 class="description-header">Summary: Latitude vs. X</h1>
-          <img src="images/Fig1.png" alt="" style="max-width:75%;"/>
-          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-        </article>
+  <div class="row" style="padding: 35px 0px 0px 0px; color:gray;"></div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-lg-12" style="text-align: center;">
+        <h3>City Latitude vs Max Temperature</h3>
+        <img src="images/Fig4.png" style="max-width:100%; text-align:center">
+        <span style="text-align:center">
+          <div class="row">
+        <p> This is an image showing the latitude of a city versus its max wind speed.</p>
       </div>
-      <div class="col-md-4">
-
-        <!-- Start of Visualizations imageNav Area -->
-        <section>
-          <div >
-            <h2>Visualizations</h2>
-            <div id="images">
-              <a href="https://heyitstobes.github.io/html-project/temperature"><img src="images/Fig1.png"  style="max-width:55%;"></a>
-              <a href="https://heyitstobes.github.io/html-project/humidity"><img src="images/Fig2.png" style="max-width:55%;"></a>
-              <a href="https://heyitstobes.github.io/html-project/cloudiness"><img src="images/Fig3.png" style="max-width:55%;"></a>
-              <a href="https://heyitstobes.github.io/html-project/wind-speed"><img src="images/Fig4.png" style="max-width:55%;"></a>
-            </div>
-          </div>
-        </section>
-        <!-- End of the Visualizations imageNav Area -->
-
+      </span>
       </div>
-    </section>
+    </div>
+    <div class="col-md-4" style="text-align:center">
+      <h3>Other Data</h3>
+      <div class="row">
+        <div class="col-md-6">City Latitude vs. Temperature
+          <a href="https://heyitstobes.github.io/html-project/temperature"><img src="images/Fig1.png" style="max-width:100%;"></div><a>
+        </div>
+        <div class="col-md-6">City Latitude vs. Humidity
+          <a href="https://heyitstobes.github.io/html-project/humidity"><img src="images/Fig2.png" style="max-width:100%;"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">City Latitude vs. Cloudiness
+          <a href="https://heyitstobes.github.io/html-project/cloudiness"><img src="images/Fig3.png" style="max-width:100%;"></a>
+        </div>
+        <div class="col-md-6">City Latitude vs. Wind Speed
+          <a href="https://heyitstobes.github.io/html-project/wind-speed"><img src="images/Fig4.png" style="max-width:100%;"></a>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
